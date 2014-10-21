@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobitel.OnlineChanelling.Business", "Mobitel.OnlineChanelling.Business\Mobitel.OnlineChanelling.Business.csproj", "{6619A73B-474E-4B31-9F3A-B118C3F44C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobitel.OnlineChanelling.DataAccess", "Mobitel.OnlineChanelling.DataAccess\Mobitel.OnlineChanelling.DataAccess.csproj", "{E3763B2C-2E3A-43CE-B561-FA2E75646319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobitel.OnlineChanelling.ExceptionHandling", "Mobitel.OnlineChanelling.ExceptionHandling\Mobitel.OnlineChanelling.ExceptionHandling.csproj", "{E41E48C9-EDC2-4859-86B6-E808BCD82A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobitel.OnlineChanelling.Logging", "Mobitel.OnlineChanelling.Logging\Mobitel.OnlineChanelling.Logging.csproj", "{6D7476CF-2C52-4863-B14F-1EA0553F4716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobitel.OnlineChanelling.Web", "Mobitel.OnlineChanelling.Web\Mobitel.OnlineChanelling.Web.csproj", "{6A756B9F-1AFC-455B-B96A-2C390C2C10D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6619A73B-474E-4B31-9F3A-B118C3F44C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6619A73B-474E-4B31-9F3A-B118C3F44C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6619A73B-474E-4B31-9F3A-B118C3F44C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6619A73B-474E-4B31-9F3A-B118C3F44C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3763B2C-2E3A-43CE-B561-FA2E75646319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3763B2C-2E3A-43CE-B561-FA2E75646319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3763B2C-2E3A-43CE-B561-FA2E75646319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3763B2C-2E3A-43CE-B561-FA2E75646319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41E48C9-EDC2-4859-86B6-E808BCD82A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41E48C9-EDC2-4859-86B6-E808BCD82A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41E48C9-EDC2-4859-86B6-E808BCD82A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41E48C9-EDC2-4859-86B6-E808BCD82A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7476CF-2C52-4863-B14F-1EA0553F4716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7476CF-2C52-4863-B14F-1EA0553F4716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7476CF-2C52-4863-B14F-1EA0553F4716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7476CF-2C52-4863-B14F-1EA0553F4716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A756B9F-1AFC-455B-B96A-2C390C2C10D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A756B9F-1AFC-455B-B96A-2C390C2C10D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A756B9F-1AFC-455B-B96A-2C390C2C10D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A756B9F-1AFC-455B-B96A-2C390C2C10D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

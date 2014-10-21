@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A756B9F-1AFC-455B-B96A-2C390C2C10D4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mobitel.OnlineChanelling.Web</RootNamespace>
+    <AssemblyName>Mobitel.OnlineChanelling.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\custom.css" />
+    <Content Include="Css\docs.css" />
+    <Content Include="Css\iconFont.css" />
+    <Content Include="Css\metro-bootstrap-responsive.css" />
+    <Content Include="Css\metro-bootstrap.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Fonts\iconFont.dev.svg" />
+    <Content Include="Fonts\iconFont.svg" />
+    <Content Include="Fonts\metroSysIcons.svg" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\access.png" />
+    <Content Include="Images\author.jpg" />
+    <Content Include="Images\b1.jpg" />
+    <Content Include="Images\Battlefield_4_Icon.png" />
+    <Content Include="Images\beer.png" />
+    <Content Include="Images\BizSparkTile.jpg" />
+    <Content Include="Images\bizspark_b.png" />
+    <Content Include="Images\bizspark_b_2.png" />
+    <Content Include="Images\Calendar-Next.png" />
+    <Content Include="Images\clouds.jpg" />
+    <Content Include="Images\clouds2.png" />
+    <Content Include="Images\Crysis-2-icon.png" />
+    <Content Include="Images\css-logo.png" />
+    <Content Include="Images\D3.png" />
+    <Content Include="Images\download-32.png" />
+    <Content Include="Images\excel.png" />
+    <Content Include="Images\excel2013icon.png" />
+    <Content Include="Images\fluent-menu.jpg" />
+    <Content Include="Images\Folder-Rename.png" />
+    <Content Include="Images\fork-32.png" />
+    <Content Include="Images\grid2.png" />
+    <Content Include="Images\jeki_chan.jpg" />
+    <Content Include="Images\jek_vorobey.jpg" />
+    <Content Include="Images\jetbrains.png" />
+    <Content Include="Images\jolie.jpg" />
+    <Content Include="Images\live1.jpg" />
+    <Content Include="Images\live2.jpg" />
+    <Content Include="Images\me.jpg" />
+    <Content Include="Images\meter-210.png" />
+    <Content Include="Images\Metro-UI-CSS.png" />
+    <Content Include="Images\myface.jpg" />
+    <Content Include="Images\Notebook-Save.png" />
+    <Content Include="Images\nuget-logo.png" />
+    <Content Include="Images\obama.jpg" />
+    <Content Include="Images\Office365.jpg" />
+    <Content Include="Images\onenote.png" />
+    <Content Include="Images\onenote2013icon.png" />
+    <Content Include="Images\Open_Source_Iniative.png" />
+    <Content Include="Images\org-01.png" />
+    <Content Include="Images\outlook.png" />
+    <Content Include="Images\phpstorm_7_eap.png" />
+    <Content Include="Images\phpstorm_tn.png" />
+    <Content Include="Images\phpstorm_tn_2.png" />
+    <Content Include="Images\powerpoint.png" />
+    <Content Include="Images\Print-Quick.png" />
+    <Content Include="Images\shvarcenegger.jpg" />
+    <Content Include="Images\spface.jpg" />
+    <Content Include="Images\tiles-bg-2.jpg" />
+    <Content Include="Images\tiles-bg.jpg" />
+    <Content Include="Images\Window-Refresh.png" />
+    <Content Include="Images\Windows-8-Logo.png" />
+    <Content Include="Images\windows_8_default_13_wallpaper.jpg" />
+    <Content Include="Images\windows_modern_logo.png" />
+    <Content Include="Images\word.png" />
+    <Content Include="Images\word2013icon.png" />
+    <Content Include="Images\x.jpg" />
+    <Content Include="Js\docs.js" />
+    <Content Include="Js\github.info.js" />
+    <Content Include="Js\hitua.js" />
+    <Content Include="Js\holder\holder.js" />
+    <Content Include="Js\jquery\jquery.dataTables.js" />
+    <Content Include="Js\jquery\jquery.easing.1.3.min.js" />
+    <Content Include="Js\jquery\jquery.min.js" />
+    <Content Include="Js\jquery\jquery.mousewheel.js" />
+    <Content Include="Js\jquery\jquery.widget.min.js" />
+    <Content Include="Js\load-metro.js" />
+    <Content Include="Js\metro.min.js" />
+    <Content Include="Js\metro\metro-accordion.js" />
+    <Content Include="Js\metro\metro-button-set.js" />
+    <Content Include="Js\metro\metro-calendar.js" />
+    <Content Include="Js\metro\metro-carousel.js" />
+    <Content Include="Js\metro\metro-core.js" />
+    <Content Include="Js\metro\metro-countdown.js" />
+    <Content Include="Js\metro\metro-date-format.js" />
+    <Content Include="Js\metro\metro-datepicker.js" />
+    <Content Include="Js\metro\metro-dialog.js" />
+    <Content Include="Js\metro\metro-drag-tile.js" />
+    <Content Include="Js\metro\metro-dropdown.js" />
+    <Content Include="Js\metro\metro-fluentmenu.js" />
+    <Content Include="Js\metro\metro-global.js" />
+    <Content Include="Js\metro\metro-hint.js" />
+    <Content Include="Js\metro\metro-initiator.js" />
+    <Content Include="Js\metro\metro-input-control.js" />
+    <Content Include="Js\metro\metro-listview.js" />
+    <Content Include="Js\metro\metro-live-tile.js" />
+    <Content Include="Js\metro\metro-loader.js" />
+    <Content Include="Js\metro\metro-locale.js" />
+    <Content Include="Js\metro\metro-notify.js" />
+    <Content Include="Js\metro\metro-panel.js" />
+    <Content Include="Js\metro\metro-plugin-template.js" />
+    <Content Include="Js\metro\metro-progressbar.js" />
+    <Content Include="Js\metro\metro-pull.js" />
+    <Content Include="Js\metro\metro-rating.js" />
+    <Content Include="Js\metro\metro-scroll.js" />
+    <Content Include="Js\metro\metro-slider.js" />
+    <Content Include="Js\metro\metro-stepper.js" />
+    <Content Include="Js\metro\metro-streamer.js" />
+    <Content Include="Js\metro\metro-tab-control.js" />
+    <Content Include="Js\metro\metro-table.js" />
+    <Content Include="Js\metro\metro-tile-transform.js" />
+    <Content Include="Js\metro\metro-times.js" />
+    <Content Include="Js\metro\metro-touch-handler.js" />
+    <Content Include="Js\metro\metro-treeview.js" />
+    <Content Include="Js\metro\metro-wizard.js" />
+    <Content Include="Js\prettify\lang-apollo.js" />
+    <Content Include="Js\prettify\lang-basic.js" />
+    <Content Include="Js\prettify\lang-clj.js" />
+    <Content Include="Js\prettify\lang-css.js" />
+    <Content Include="Js\prettify\lang-dart.js" />
+    <Content Include="Js\prettify\lang-erlang.js" />
+    <Content Include="Js\prettify\lang-go.js" />
+    <Content Include="Js\prettify\lang-hs.js" />
+    <Content Include="Js\prettify\lang-lisp.js" />
+    <Content Include="Js\prettify\lang-llvm.js" />
+    <Content Include="Js\prettify\lang-lua.js" />
+    <Content Include="Js\prettify\lang-matlab.js" />
+    <Content Include="Js\prettify\lang-ml.js" />
+    <Content Include="Js\prettify\lang-mumps.js" />
+    <Content Include="Js\prettify\lang-n.js" />
+    <Content Include="Js\prettify\lang-pascal.js" />
+    <Content Include="Js\prettify\lang-proto.js" />
+    <Content Include="Js\prettify\lang-r.js" />
+    <Content Include="Js\prettify\lang-rd.js" />
+    <Content Include="Js\prettify\lang-scala.js" />
+    <Content Include="Js\prettify\lang-sql.js" />
+    <Content Include="Js\prettify\lang-tcl.js" />
+    <Content Include="Js\prettify\lang-tex.js" />
+    <Content Include="Js\prettify\lang-vb.js" />
+    <Content Include="Js\prettify\lang-vhdl.js" />
+    <Content Include="Js\prettify\lang-wiki.js" />
+    <Content Include="Js\prettify\lang-xq.js" />
+    <Content Include="Js\prettify\lang-yaml.js" />
+    <Content Include="Js\prettify\prettify.css" />
+    <Content Include="Js\prettify\prettify.js" />
+    <Content Include="Js\prettify\run_prettify.js" />
+    <Content Include="Js\start-screen.js" />
+    <Content Include="Usercontrols\NavigationBar.ascx" />
+    <Content Include="Views\ContactUs.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\NavigationBar.ascx.cs">
+      <DependentUpon>NavigationBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\NavigationBar.ascx.designer.cs">
+      <DependentUpon>NavigationBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\less\docs.less" />
+    <Content Include="Fonts\iconFont.eot" />
+    <Content Include="Fonts\iconFont.json" />
+    <Content Include="Fonts\iconFont.ttf" />
+    <Content Include="Fonts\iconFont.woff" />
+    <Content Include="Fonts\metroSysIcons.ttf" />
+    <Content Include="Fonts\metroSysIcons.woff" />
+    <Content Include="Fonts\OpenSans-Bold.woff" />
+    <Content Include="Fonts\OpenSans-Light.woff" />
+    <Content Include="Fonts\OpenSans.woff" />
+    <Content Include="Fonts\PTSerif-Caption.woff" />
+    <Content Include="Js\metro\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20306/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

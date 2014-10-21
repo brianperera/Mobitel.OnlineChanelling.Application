@@ -1,0 +1,5 @@
+E:\Websites\Mobitel\Mobitel.OnlineChanelling.Application.git\trunk\Source\Mobitel.OnlineChanelling.Application\Mobitel.OnlineChanelling.Web\bin\Mobitel.OnlineChanelling.Web.dll
+E:\Websites\Mobitel\Mobitel.OnlineChanelling.Application.git\trunk\Source\Mobitel.OnlineChanelling.Application\Mobitel.OnlineChanelling.Web\bin\Mobitel.OnlineChanelling.Web.pdb
+E:\Websites\Mobitel\Mobitel.OnlineChanelling.Application.git\trunk\Source\Mobitel.OnlineChanelling.Application\Mobitel.OnlineChanelling.Web\obj\Debug\Mobitel.OnlineChanelling.Web.csprojResolveAssemblyReference.cache
+E:\Websites\Mobitel\Mobitel.OnlineChanelling.Application.git\trunk\Source\Mobitel.OnlineChanelling.Application\Mobitel.OnlineChanelling.Web\obj\Debug\Mobitel.OnlineChanelling.Web.dll
+E:\Websites\Mobitel\Mobitel.OnlineChanelling.Application.git\trunk\Source\Mobitel.OnlineChanelling.Application\Mobitel.OnlineChanelling.Web\obj\Debug\Mobitel.OnlineChanelling.Web.pdb

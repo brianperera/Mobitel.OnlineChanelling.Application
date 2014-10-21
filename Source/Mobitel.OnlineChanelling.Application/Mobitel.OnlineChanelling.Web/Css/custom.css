@@ -1,0 +1,31 @@
+.no-right-margin { margin-right:0px !important; }
+.font-color-black { color:black }
+.metro .tile.quadro { width:74% !important }
+.metro .table-bordered td, .metro .table-bordered th, .metro .table-bordered tr {
+    border: 1px #eaeaea solid;
+    padding: 8px;
+font-size: 14px;
+line-height: 14pt;
+}
+.table-alternative-row-style {
+    background: #eeeeee;
+}
+.table-alternative-row-style:hover {
+    background-color:rgba(28, 183, 236, 0.1);
+}
+
+.metro .tile.triple {
+    width: 417px;
+}
+
+html, body {
+    height:auto;
+}
+
+.metro .tile.quadro-vertical {
+    
+}
+
+.metro .data-table {
+    height:334px !important;
+}
