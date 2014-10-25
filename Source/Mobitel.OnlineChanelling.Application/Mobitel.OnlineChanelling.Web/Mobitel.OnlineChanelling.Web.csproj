@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\..\NHS.Staffing.DataEntry.Portal-master\Source\NHS.Staffing.DataEntry.Portal\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
@@ -220,6 +223,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="TempDataAccess.cs" />
     <Compile Include="Usercontrols\NavigationBar.ascx.cs">
       <DependentUpon>NavigationBar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,7 +259,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Mobitel.OnlineChanelling.DataAccess\Mobitel.OnlineChanelling.DataAccess.csproj">
+      <Project>{e3763b2c-2e3a-43ce-b561-fa2e75646319}</Project>
+      <Name>Mobitel.OnlineChanelling.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

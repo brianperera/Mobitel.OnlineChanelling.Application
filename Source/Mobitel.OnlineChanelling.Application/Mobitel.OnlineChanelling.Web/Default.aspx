@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="True" Inherits="Mobitel.OnlineChanelling.Web.Default" CodeBehind="Default.aspx.cs" %>
 
 <%@ Register Src="Usercontrols/NavigationBar.ascx" TagName="NavigationBar" TagPrefix="uc1" %>
-
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7 no-js"> <![endif]-->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -43,6 +43,24 @@
             width: 1040px;
         }
     </style>
+    <script type="text/javascript">
+        function OnContactSelected(source, eventArgs) {
+
+            var hdnValueID = "<%= hdnSelectedDoctor.ClientID %>";
+
+            document.getElementById(hdnValueID).value = eventArgs.get_value();
+            __doPostBack(hdnValueID, "");
+        }
+        function ClearHiddenField() {
+
+            var hdnValueID = "hdnSelectedDoctor";
+
+            document.getElementById(hdnValueID).value = "";
+            __doPostBack(hdnValueID, "");
+            document.getElementById('txtDoctorsSearch').value = "";
+        }
+
+    </script>
 </head>
 <body class="metro">
     <div class="container">
@@ -50,7 +68,11 @@
             <uc1:NavigationBar ID="NavigationBar1" runat="server" />
         </header>
 
-        <form id="form" runat="server">
+            <form id="form" runat="server">
+                        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
             <div class="main-content clearfix">
                 <div class="tile-area no-padding clearfix">
                     <div class="tile-group no-margin no-padding clearfix" style="width: 100%">
@@ -58,26 +80,28 @@
                             <fieldset>
                                 <legend>Search For Your Doctor</legend>
                                 <label class="font-color-black">Hospital</label>
-                                <div class="input-control select">
-                                    <select>
-                                        <option>Value 1</option>
-                                        <option>Value 2</option>
-                                        <option>Value 3</option>
-                                    </select>
-                                </div>
+                                <asp:DropDownList ID="ddlHospitals" runat="server" OnSelectedIndexChanged="ddlHospitals_SelectedIndexChanged" AutoPostBack="true">
+                                </asp:DropDownList>
                                 <label class="font-color-black">Specialty</label>
-                                <div class="input-control select">
-                                    <select>
-                                        <option>Value 1</option>
-                                        <option>Value 2</option>
-                                        <option>Value 3</option>
-                                    </select>
-                                </div>
+                                <asp:DropDownList ID="ddlSpeciality" runat="server" OnSelectedIndexChanged="ddlSpeciality_SelectedIndexChanged" AutoPostBack="true">
+                                </asp:DropDownList>
                                 <label class="font-color-black">Doctors Name</label>
                                 <div class="input-control text" data-role="input-control">
                                     <input type="text" placeholder="Doctors Name">
                                     <button class="btn-clear" tabindex="-1"></button>
                                 </div>
+                                <div class="input-control text" data-role="input-control">
+                                    <asp:hiddenfield id="hdnSelectedDoctor" OnValueChanged="hdnSelectedDoctor_ValueChanged" runat="server"/>
+                                    <asp:TextBox ID="txtDoctorsSearch" runat="server"  ></asp:TextBox>
+                                    <button class="btn-clear" tabindex="-1" onmouseup="ClearHiddenField()"></button>
+                                </div>
+                                <asp:AutoCompleteExtender ServiceMethod="SearchDoctores"
+                                    MinimumPrefixLength="1" onclientitemselected="OnContactSelected"
+                                    CompletionInterval="100" EnableCaching="false" CompletionSetCount="10"
+                                    TargetControlID="txtDoctorsSearch"
+                                    ID="AutoCompleteExtender1" runat="server" FirstRowSelected = "true">
+                                    
+                                </asp:AutoCompleteExtender>
                                 <label class="font-color-black">Date</label>
                                 <div class="input-control text" data-role="datepicker" data-week-start="1">
                                     <input type="text">
@@ -129,7 +153,10 @@
                     <!-- End first group -->
                 </div>
             </div>
+                    </ContentTemplate>
+        </asp:UpdatePanel>
         </form>
+
         <footer>
             <div class="bottom-menu-wrapper">
                 <ul class="horizontal-menu compact">
