@@ -57,7 +57,6 @@
 
             document.getElementById(hdnValueID).value = "";
             __doPostBack(hdnValueID, "");
-            document.getElementById('txtDoctorsSearch').value = "";
         }
 
     </script>
@@ -79,29 +78,28 @@
                         <div class="tile double quadro-vertical bg-white ol-transparent no-right-margin" style="float: right;">
                             <fieldset>
                                 <legend>Search For Your Doctor</legend>
-                                <label class="font-color-black">Hospital</label>
-                                <asp:DropDownList ID="ddlHospitals" runat="server" OnSelectedIndexChanged="ddlHospitals_SelectedIndexChanged" AutoPostBack="true">
-                                </asp:DropDownList>
-                                <label class="font-color-black">Specialty</label>
-                                <asp:DropDownList ID="ddlSpeciality" runat="server" OnSelectedIndexChanged="ddlSpeciality_SelectedIndexChanged" AutoPostBack="true">
-                                </asp:DropDownList>
                                 <label class="font-color-black">Doctors Name</label>
                                 <div class="input-control text" data-role="input-control">
-                                    <input type="text" placeholder="Doctors Name">
-                                    <button class="btn-clear" tabindex="-1"></button>
-                                </div>
-                                <div class="input-control text" data-role="input-control">
                                     <asp:hiddenfield id="hdnSelectedDoctor" OnValueChanged="hdnSelectedDoctor_ValueChanged" runat="server"/>
-                                    <asp:TextBox ID="txtDoctorsSearch" runat="server"  ></asp:TextBox>
+                                    <asp:TextBox ID="txtDoctorsSearch" runat="server" placeholder="Doctors Name"></asp:TextBox>
                                     <button class="btn-clear" tabindex="-1" onmouseup="ClearHiddenField()"></button>
                                 </div>
                                 <asp:AutoCompleteExtender ServiceMethod="SearchDoctores"
                                     MinimumPrefixLength="1" onclientitemselected="OnContactSelected"
                                     CompletionInterval="100" EnableCaching="false" CompletionSetCount="10"
                                     TargetControlID="txtDoctorsSearch"
-                                    ID="AutoCompleteExtender1" runat="server" FirstRowSelected = "true">
-                                    
+                                    ID="AutoCompleteExtender1" runat="server" FirstRowSelected = "true">                                    
                                 </asp:AutoCompleteExtender>
+                                <label class="font-color-black">Hospital</label>
+                                <div class="input-control select" data-role="input-control">
+                                    <asp:DropDownList ID="ddlHospitals" runat="server" OnSelectedIndexChanged="ddlHospitals_SelectedIndexChanged" AutoPostBack="true">
+                                    </asp:DropDownList>
+                                </div>
+                                <label class="font-color-black">Specialty</label>
+                                <div class="input-control select" data-role="input-control">
+                                    <asp:DropDownList ID="ddlSpeciality" runat="server" OnSelectedIndexChanged="ddlSpeciality_SelectedIndexChanged" AutoPostBack="true">
+                                    </asp:DropDownList>  
+                                </div>                              
                                 <label class="font-color-black">Date</label>
                                 <div class="input-control text" data-role="datepicker" data-week-start="1">
                                     <input type="text">
