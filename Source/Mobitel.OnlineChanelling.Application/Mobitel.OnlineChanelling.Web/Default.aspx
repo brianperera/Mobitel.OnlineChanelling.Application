@@ -11,7 +11,7 @@
         }
         function ClearHiddenField() {
 
-            var hdnValueID = "hdnSelectedDoctor";
+            var hdnValueID = "<%= hdnSelectedDoctor.ClientID %>";
 
             document.getElementById(hdnValueID).value = "";
             __doPostBack(hdnValueID, "");
