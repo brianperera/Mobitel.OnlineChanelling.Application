@@ -57,8 +57,27 @@
                                     <input type="text">
                                     <button class="btn-date"></button>
                                 </div>
-                                <button class="button large primary">Search</button>
-                                <button class="button success">Advance Search</button>
+                                <div>
+                                    <div class="accordion" data-role="accordion">
+                                        <div class="accordion-frame">
+                                            <a href="#" class="heading bg-lightBlue">Advanced Search</a>
+                                            <div class="content">
+                                                <div class="input-control radio margin10" data-role="input-control">
+                                                    <label  class="font-color-black">
+                                                        <input type="radio" name="r3"/>
+                                                        <span class="check"></span>Male
+                                                    </label>                                                     
+                                                </div>
+                                                <div class="input-control radio margin10" data-role="input-control">
+                                                    <label  class="font-color-black">
+                                                        <input type="radio" name="r3"/>
+                                                        <span class="check"></span>Female
+                                                    </label>                                                       
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </fieldset>
                         </div>
 
