@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Mobitel.OnlineChanelling.DataAccess.DTO;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -15,32 +17,32 @@ namespace Mobitel.OnlineChanelling.Web
     {
         #region Properties
 
-        public List<Doctor> Doctors 
+        public List<Doctor> Doctors
         {
             get
             {
                 List<Doctor> doctorList = new List<Doctor>
                 {
-                   //new Doctor("Dr W.K Balasuriya", "Physician", "Nawaloka Hospital", "Yes"),
-                   //new Doctor("Dr(Ms) Damayanthi Bandara", "Dermatologist", "Lanka Hospitals", "Yes"),
-                   //new Doctor("Dr Jagath Bandara", "Psychiatrist", "Durdans Hospital", "Yes"),
-                   //new Doctor("Dr Mihira Bandara", "Surgeon", "Hemas Hospital Thalawathugoda", "Yes"),
-                   //new Doctor("Dr Chameera Bandara", "Oculoplastic Surgeon", "Central Hospital (Asiri Group)", "Yes"),
-                   //new Doctor("Dr Piyasena Bandujeewa", "Orthopaedic Surgeon", "New Philip Hospitals (Pvt) Ltd", "Yes"),
-                   //new Doctor("Dr Uditha Bulugahapitiya", "Endocrinologist/Diabetologist", "Lanka Hospitals", "Yes"),
-                   //new Doctor("Dr Kulasiri Buddhakorala", "General Physician", "Hemas Southern Hospital Galle", "Yes"),
-                   //new Doctor("Dr Thushan Beneragama", "Plastic Surgeon", "Lanka Hospitals", "Yes"),
-                   //new Doctor("Dr Milhan Batcha", "Gynaecologist And Consultant In Fertility", "Asiri Hospital Ltd", "Yes"),
-                   //new Doctor("Dr W.K Balasuriya", "Physician", "Nawaloka Hospital", "Yes"),
-                   //new Doctor("Dr(Ms) Damayanthi Bandara", "Dermatologist", "Lanka Hospitals", "Yes"),
-                   //new Doctor("Dr Jagath Bandara", "Psychiatrist", "Durdans Hospital", "Yes"),
-                   //new Doctor("Dr Mihira Bandara", "Surgeon", "Hemas Hospital Thalawathugoda", "Yes"),
-                   //new Doctor("Dr Chameera Bandara", "Oculoplastic Surgeon", "Central Hospital (Asiri Group)", "Yes"),
-                   //new Doctor("Dr Piyasena Bandujeewa", "Orthopaedic Surgeon", "New Philip Hospitals (Pvt) Ltd", "Yes"),
-                   //new Doctor("Dr Uditha Bulugahapitiya", "Endocrinologist/Diabetologist", "Lanka Hospitals", "Yes"),
-                   //new Doctor("Dr Kulasiri Buddhakorala", "General Physician", "Hemas Southern Hospital Galle", "Yes"),
-                   //new Doctor("Dr Thushan Beneragama", "Plastic Surgeon", "Lanka Hospitals", "Yes"),
-                   //new Doctor("Dr Milhan Batcha", "Gynaecologist And Consultant In Fertility", "Asiri Hospital Ltd", "Yes")
+                    //new Doctor("Dr W.K Balasuriya", "Physician", "Nawaloka Hospital", "Yes"),
+                    //new Doctor("Dr(Ms) Damayanthi Bandara", "Dermatologist", "Lanka Hospitals", "Yes"),
+                    //new Doctor("Dr Jagath Bandara", "Psychiatrist", "Durdans Hospital", "Yes"),
+                    //new Doctor("Dr Mihira Bandara", "Surgeon", "Hemas Hospital Thalawathugoda", "Yes"),
+                    //new Doctor("Dr Chameera Bandara", "Oculoplastic Surgeon", "Central Hospital (Asiri Group)", "Yes"),
+                    //new Doctor("Dr Piyasena Bandujeewa", "Orthopaedic Surgeon", "New Philip Hospitals (Pvt) Ltd", "Yes"),
+                    //new Doctor("Dr Uditha Bulugahapitiya", "Endocrinologist/Diabetologist", "Lanka Hospitals", "Yes"),
+                    //new Doctor("Dr Kulasiri Buddhakorala", "General Physician", "Hemas Southern Hospital Galle", "Yes"),
+                    //new Doctor("Dr Thushan Beneragama", "Plastic Surgeon", "Lanka Hospitals", "Yes"),
+                    //new Doctor("Dr Milhan Batcha", "Gynaecologist And Consultant In Fertility", "Asiri Hospital Ltd", "Yes"),
+                    //new Doctor("Dr W.K Balasuriya", "Physician", "Nawaloka Hospital", "Yes"),
+                    //new Doctor("Dr(Ms) Damayanthi Bandara", "Dermatologist", "Lanka Hospitals", "Yes"),
+                    //new Doctor("Dr Jagath Bandara", "Psychiatrist", "Durdans Hospital", "Yes"),
+                    //new Doctor("Dr Mihira Bandara", "Surgeon", "Hemas Hospital Thalawathugoda", "Yes"),
+                    //new Doctor("Dr Chameera Bandara", "Oculoplastic Surgeon", "Central Hospital (Asiri Group)", "Yes"),
+                    //new Doctor("Dr Piyasena Bandujeewa", "Orthopaedic Surgeon", "New Philip Hospitals (Pvt) Ltd", "Yes"),
+                    //new Doctor("Dr Uditha Bulugahapitiya", "Endocrinologist/Diabetologist", "Lanka Hospitals", "Yes"),
+                    //new Doctor("Dr Kulasiri Buddhakorala", "General Physician", "Hemas Southern Hospital Galle", "Yes"),
+                    //new Doctor("Dr Thushan Beneragama", "Plastic Surgeon", "Lanka Hospitals", "Yes"),
+                    //new Doctor("Dr Milhan Batcha", "Gynaecologist And Consultant In Fertility", "Asiri Hospital Ltd", "Yes")
                 };
 
                 return doctorList;

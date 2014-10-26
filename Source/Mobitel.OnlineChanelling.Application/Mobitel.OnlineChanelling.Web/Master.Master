@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Mobitel.OnlineChanelling.Web.Master" %>
+
+<%@ Register Src="Usercontrols/NavigationBar.ascx" TagName="NavigationBar" TagPrefix="uc1" %>
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="product" content="Metro UI CSS Framework">
+    <meta name="description" content="Simple responsive css framework">
+    <meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
+
+    <link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/iconFont.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" />
+
+
+    <!-- Load JavaScript Libraries -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery.widget.min.js"></script>
+    <script src="js/jquery/jquery.mousewheel.js"></script>
+    <link href="js/prettify/prettify.css" rel="stylesheet">
+
+    <!-- Metro UI CSS JavaScript plugins -->
+    <script src="js/load-metro.js"></script>
+
+    <!-- Local JavaScript -->
+    <script src="js/github.info.js"></script>
+    <script src="js/docs.js"></script>
+
+    <title>Mobitel Online Channelling</title>
+
+    <style>
+        .container {
+            width: 1040px;
+        }
+    </style>
+    <script src="js/hitua.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="metro">
+    <form id="form1" runat="server">
+        <div class="container">
+            <header class="margin20 nrm nlm">
+                <uc1:NavigationBar ID="NavigationBar1" runat="server" />
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <div class="bottom-menu-wrapper">
+                    <ul class="horizontal-menu compact">
+                        <li><a href="Default.aspx">Home</a></li>
+                        <li><a href="Views/ContactUs.aspx">Investor Relations</a></li>
+                        <li><a href="Views/ContactUs.aspx">Channel History</a></li>
+                        <li><a href="Views/ContactUs.aspx">Partners</a></li>
+                        <li><a href="Views/ContactUs.aspx">Company</a></li>
+                        <li><a href="Views/ContactUs.aspx">Careers</a></li>
+                        <li><a href="Views/ContactUs.aspx">Member Home</a></li>
+                        <li><a href="Views/ContactUs.aspx">Contact Us</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
