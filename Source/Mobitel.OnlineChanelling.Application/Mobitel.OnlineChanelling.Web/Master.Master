@@ -1,6 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Mobitel.OnlineChanelling.Web.Master" %>
 
 <%@ Register Src="Usercontrols/NavigationBar.ascx" TagName="NavigationBar" TagPrefix="uc1" %>
+<%@ Register src="Usercontrols/Footer.ascx" tagname="Footer" tagprefix="uc2" %>
 <!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7 no-js"> <![endif]-->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -40,7 +41,8 @@
             width: 1040px;
         }
     </style>
-    <script src="js/hitua.js"></script>
+    <%--<script src="js/hitua.js"></script>--%>
+    <script src="Js/custom.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -52,20 +54,7 @@
             </header>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <footer>
-                <div class="bottom-menu-wrapper">
-                    <ul class="horizontal-menu compact">
-                        <li><a href="Default.aspx">Home</a></li>
-                        <li><a href="Views/ContactUs.aspx">Investor Relations</a></li>
-                        <li><a href="Views/ContactUs.aspx">Channel History</a></li>
-                        <li><a href="Views/ContactUs.aspx">Partners</a></li>
-                        <li><a href="Views/ContactUs.aspx">Company</a></li>
-                        <li><a href="Views/ContactUs.aspx">Careers</a></li>
-                        <li><a href="Views/ContactUs.aspx">Member Home</a></li>
-                        <li><a href="Views/ContactUs.aspx">Contact Us</a></li>
-                    </ul>
-                </div>
-            </footer>
+            <uc2:Footer ID="Footer1" runat="server" />
         </div>
     </form>
 </body>

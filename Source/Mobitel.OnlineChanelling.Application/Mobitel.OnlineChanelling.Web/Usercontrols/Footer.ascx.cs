@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Mobitel.OnlineChanelling.Web.Views
+namespace Mobitel.OnlineChanelling.Web.Usercontrols
 {
-    public partial class ContactUs : System.Web.UI.Page
+    public partial class Footer : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -130,6 +130,7 @@
     <Content Include="Images\word.png" />
     <Content Include="Images\word2013icon.png" />
     <Content Include="Images\x.jpg" />
+    <Content Include="Js\custom.js" />
     <Content Include="Js\docs.js" />
     <Content Include="Js\github.info.js" />
     <Content Include="Js\hitua.js" />
@@ -210,8 +211,10 @@
     <Content Include="Js\prettify\prettify.js" />
     <Content Include="Js\prettify\run_prettify.js" />
     <Content Include="Js\start-screen.js" />
+    <Content Include="Usercontrols\Footer.ascx" />
     <Content Include="Usercontrols\NavigationBar.ascx" />
-    <Content Include="Views\ContactUs.aspx" />
+    <Content Include="Channel.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -233,6 +236,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TempDataAccess.cs" />
+    <Compile Include="Usercontrols\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\NavigationBar.ascx.cs">
       <DependentUpon>NavigationBar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,11 +250,18 @@
     <Compile Include="Usercontrols\NavigationBar.ascx.designer.cs">
       <DependentUpon>NavigationBar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Views\ContactUs.aspx.cs">
+    <Compile Include="Channel.aspx.cs">
+      <DependentUpon>Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Channel.aspx.designer.cs">
+      <DependentUpon>Channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\ContactUs.aspx.designer.cs">
+    <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

@@ -10,14 +10,14 @@
             <li>
                 <a class="dropdown-toggle" href="#">Menu</a>
                 <ul class="dropdown-menu" data-role="dropdown">
-                    <li><a href="Default.aspx">Home</a></li>
-                    <li><a href="Views/ContactUs.aspx">Investor Relations</a></li>
-                    <li><a href="Views/ContactUs.aspx">Channel History</a></li>
-                    <li><a href="Views/ContactUs.aspx">Partners</a></li>
-                    <li><a href="Views/ContactUs.aspx">Company</a></li>
-                    <li><a href="Views/ContactUs.aspx">Careers</a></li>
-                    <li><a href="Views/ContactUs.aspx">Member Home</a></li>
-                    <li><a href="Views/ContactUs.aspx">Contact Us</a></li>
+                    <li><a href="/Default.aspx">Home</a></li>
+                    <li><a href="/ContactUs.aspx">Investor Relations</a></li>
+                    <li><a href="/ContactUs.aspx">Channel History</a></li>
+                    <li><a href="/ContactUs.aspx">Partners</a></li>
+                    <li><a href="/ContactUs.aspx">Company</a></li>
+                    <li><a href="/ContactUs.aspx">Careers</a></li>
+                    <li><a href="/ContactUs.aspx">Member Home</a></li>
+                    <li><a href="/ContactUs.aspx">Contact Us</a></li>
                 </ul>
             </li>
         </ul>

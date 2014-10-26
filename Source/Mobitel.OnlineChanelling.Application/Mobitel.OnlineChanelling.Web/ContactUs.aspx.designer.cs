@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Mobitel.OnlineChanelling.Web.Views {
+namespace Mobitel.OnlineChanelling.Web {
     
     
     public partial class ContactUs {

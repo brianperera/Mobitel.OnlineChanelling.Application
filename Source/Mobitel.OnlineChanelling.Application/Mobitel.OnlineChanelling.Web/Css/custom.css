@@ -1,6 +1,7 @@
 .no-right-margin { margin-right:0px !important; }
 .font-color-black { color:black }
 .metro .tile.quadro { width:74% !important }
+.metro .tile.quadro.wide { width:100% !important }
 .metro .table-bordered td, .metro .table-bordered th, .metro .table-bordered tr {
     border: 1px #eaeaea solid;
     padding: 8px;
@@ -10,7 +11,7 @@ line-height: 14pt;
 .table-alternative-row-style {
     background: #eeeeee;
 }
-.table-alternative-row-style:hover {
+.table-alternative-row-style:hover, .metro .tile-content tr:hover {
     background-color:rgba(28, 183, 236, 0.1);
 }
 
@@ -28,4 +29,12 @@ html, body {
 
 .metro .data-table {
     height:334px !important;
+}
+
+.no-margin {
+    margin:0px !important;
+}
+
+.wizard-wrapper {
+    margin-bottom:80px;
 }

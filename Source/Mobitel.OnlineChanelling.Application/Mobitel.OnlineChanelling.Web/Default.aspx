@@ -16,7 +16,6 @@
             document.getElementById(hdnValueID).value = "";
             __doPostBack(hdnValueID, "");
         }
-
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -24,6 +23,18 @@
     </asp:ToolkitScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
+            <script type="text/javascript" language="javascript">
+
+                function jScript() {
+                    
+                    $('#ctl00_ContentPlaceHolder1_DoctorSearchDataGrid').click(function () {
+                        var url = "/Channel.aspx";
+                        $(location).attr('href', url);
+                    });
+
+                }
+                Sys.Application.add_load(jScript);
+            </script>            
             <div class="main-content clearfix">
                 <div class="tile-area no-padding clearfix">
                     <div class="tile-group no-margin no-padding clearfix" style="width: 100%">
@@ -82,7 +93,7 @@
                         </div>
 
                         <div class="tile quadro ol-transparent data-table">
-                            <div class="tile-content font-color-black table-bordered">
+                            <div class="doctor-search-grid tile-content font-color-black table-bordered">
                                 <asp:GridView Width="100%" ID="DoctorSearchDataGrid" runat="server" AllowPaging="True" PageSize="7" OnPageIndexChanging="DoctorSearchDataGrid_PageIndexChanging">
                                     <AlternatingRowStyle CssClass="table-alternative-row-style" />
                                     <HeaderStyle CssClass="text-left" />
